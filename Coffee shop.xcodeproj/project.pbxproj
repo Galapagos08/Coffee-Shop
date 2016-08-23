@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F7C3D4201D6CE72400C68F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C3D41F1D6CE72400C68F7E /* main.m */; };
+		F7C3D4281D6CE7E300C68F7E /* EspressoMachine.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C3D4271D6CE7E300C68F7E /* EspressoMachine.m */; };
+		F7C3D42B1D6CEB1100C68F7E /* Barista.m in Sources */ = {isa = PBXBuildFile; fileRef = F7C3D42A1D6CEB1100C68F7E /* Barista.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		F7C3D41C1D6CE72400C68F7E /* Coffee shop */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Coffee shop"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C3D41F1D6CE72400C68F7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F7C3D4261D6CE7E300C68F7E /* EspressoMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EspressoMachine.h; path = ../EspressoMachine.h; sourceTree = "<group>"; };
+		F7C3D4271D6CE7E300C68F7E /* EspressoMachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EspressoMachine.m; path = ../EspressoMachine.m; sourceTree = "<group>"; };
+		F7C3D4291D6CEB1100C68F7E /* Barista.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Barista.h; sourceTree = "<group>"; };
+		F7C3D42A1D6CEB1100C68F7E /* Barista.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Barista.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,10 @@
 		F7C3D41E1D6CE72400C68F7E /* Coffee shop */ = {
 			isa = PBXGroup;
 			children = (
+				F7C3D4291D6CEB1100C68F7E /* Barista.h */,
+				F7C3D42A1D6CEB1100C68F7E /* Barista.m */,
+				F7C3D4261D6CE7E300C68F7E /* EspressoMachine.h */,
+				F7C3D4271D6CE7E300C68F7E /* EspressoMachine.m */,
 				F7C3D41F1D6CE72400C68F7E /* main.m */,
 			);
 			path = "Coffee shop";
@@ -121,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C3D4201D6CE72400C68F7E /* main.m in Sources */,
+				F7C3D42B1D6CEB1100C68F7E /* Barista.m in Sources */,
+				F7C3D4281D6CE7E300C68F7E /* EspressoMachine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
