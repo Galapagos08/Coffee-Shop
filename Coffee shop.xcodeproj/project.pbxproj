@@ -63,11 +63,11 @@
 		F7C3D41E1D6CE72400C68F7E /* Coffee shop */ = {
 			isa = PBXGroup;
 			children = (
+				F7C3D41F1D6CE72400C68F7E /* main.m */,
 				F7C3D4291D6CEB1100C68F7E /* Barista.h */,
 				F7C3D42A1D6CEB1100C68F7E /* Barista.m */,
 				F7C3D4261D6CE7E300C68F7E /* EspressoMachine.h */,
 				F7C3D4271D6CE7E300C68F7E /* EspressoMachine.m */,
-				F7C3D41F1D6CE72400C68F7E /* main.m */,
 			);
 			path = "Coffee shop";
 			sourceTree = "<group>";

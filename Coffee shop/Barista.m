@@ -7,13 +7,14 @@
 //
 
 #import "Barista.h"
+#import "EspressoMachine.h"
 
 @implementation Barista
 
-- (void)espressoMachineWaterHasBecomeHot:(EspressoMachine *)espressoMachine {
-    
-};
 
+- (BOOL)espressoMachineDidFinishMakingEspresso:(EspressoMachine *)espressoMachine {
+    return YES;
+}
 
 
 @end

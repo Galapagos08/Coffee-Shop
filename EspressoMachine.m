@@ -12,31 +12,37 @@
 
 - (void) makeEspresso {
     
-};
+    BOOL hasWater = arc4random() % 2 == 0;
+    BOOL hasBeans = arc4random() % 2 == 0;
+    BOOL waterIsHot = arc4random() % 2 == 0;
+    
+    if(hasWater && hasBeans && waterIsHot) {
+        NSLog(@"Here is your espresso! Thank you and have a nice day!");
+    } else {
+        if (!hasWater) {
+            [self addWater];
+            [self heatWater];
+        }  if (!hasBeans) {
+            [self addBeans];
+        }  if (hasWater && !waterIsHot) {
+            [self heatWater];
+        }
+        NSLog(@"Here is your espresso! Thank you and have a nice day!");
+    }
+}
+
 - (void) heatWater {
-    
-};
+    NSLog(@"I heated the water in the espresso machine.");
+}
+
 - (void) addBeans {
-    
-};
+    NSLog(@"I added the beans to the espresso machine.");
+}
+
 - (void) addWater {
-    
-};
-
-
+    NSLog(@"I added water to the espresso machine.");
+}
 
 
 @end
 
-// @property (nonatomic, copy) hasWater;
-/*
- should have a property named hasWater
- should have a property named hasBeans
- should have a property named waterIsHot
- should have a property named delegate
- delegate should conform to EspressoMachineDelegate
- should have a method makeEspresso
- should have a method heatWater
- should have a method addBeans
- should have a method addWater
- */
