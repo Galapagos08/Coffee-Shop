@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "EspressoMachine.h"
+#import "Barista.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         EspressoMachine *espressoMachine = [[EspressoMachine alloc] init];
+        Barista *barista = [[Barista alloc] init];
         [espressoMachine makeEspresso];
+        espressoMachine.delegate = barista;
+        
     }
     return 0;
 }
