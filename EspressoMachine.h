@@ -23,12 +23,9 @@
 @end
 
 @protocol EspressoMachineDelegate <NSObject>
-- (BOOL)espressoMachineDidFinishMakingEspresso:(EspressoMachine *)espressoMachine;
+- (void)espressoMachineDidFinishMakingEspresso:(EspressoMachine *)espressoMachine;
 
 @optional
-- (BOOL)espressoMachineWaterHasBecomeHot:(EspressoMachine *)espressoMachine;
-
-
-
+- (void)espressoMachineWaterHasBecomeHot:(EspressoMachine *)espressoMachine;
 
 @end

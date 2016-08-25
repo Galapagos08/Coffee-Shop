@@ -12,12 +12,12 @@
 
 - (void) makeEspresso {
     
-    BOOL hasWater = arc4random() % 2 == 0;
-    BOOL hasBeans = arc4random() % 2 == 0;
-    BOOL waterIsHot = arc4random() % 2 == 0;
+    BOOL hasWater = NO;
+    BOOL hasBeans = NO;
+    BOOL waterIsHot = NO;
     
     if(hasWater && hasBeans && waterIsHot) {
-        NSLog(@"Here is your espresso! Thank you and have a nice day!");
+        NSLog(@"The espresso machine is ready to go.");
     } else {
         if (!hasWater) {
             [self addWater];
@@ -27,7 +27,7 @@
         }  if (hasWater && !waterIsHot) {
             [self heatWater];
         }
-        NSLog(@"Here is your espresso! Thank you and have a nice day!");
+        NSLog(@"The espresso machine has finished making coffee.");
     }
 }
 

@@ -12,8 +12,12 @@
 @implementation Barista
 
 
-- (BOOL)espressoMachineDidFinishMakingEspresso:(EspressoMachine *)espressoMachine {
-    return YES;
+- (void)espressoMachineDidFinishMakingEspresso:(EspressoMachine *)espressoMachine {
+    NSLog(@"Here is your espresso! Thank you and have a nice day!");
+}
+
+- (void)espressoMachineWaterHasBecomeHot:(EspressoMachine *)espressoMachine {
+
 }
 
 
