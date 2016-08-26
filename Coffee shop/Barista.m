@@ -17,7 +17,7 @@
 }
 
 - (void)espressoMachineWaterHasBecomeHot:(EspressoMachine *)espressoMachine {
-
+    NSLog(@"The water is hot.");
 }
 
 

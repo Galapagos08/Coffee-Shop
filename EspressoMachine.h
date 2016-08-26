@@ -23,6 +23,7 @@
 @end
 
 @protocol EspressoMachineDelegate <NSObject>
+
 - (void)espressoMachineDidFinishMakingEspresso:(EspressoMachine *)espressoMachine;
 
 @optional

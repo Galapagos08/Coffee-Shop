@@ -14,9 +14,8 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         EspressoMachine *espressoMachine = [[EspressoMachine alloc] init];
         Barista *barista = [[Barista alloc] init];
-        [espressoMachine makeEspresso];
         espressoMachine.delegate = barista;
-        [barista espressoMachineDidFinishMakingEspresso:espressoMachine];
+        [espressoMachine makeEspresso];
     }
     return 0;
 }
